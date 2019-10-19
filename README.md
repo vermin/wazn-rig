@@ -28,7 +28,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
 ### Options
 ```
   -a, --algo=ALGO          specify the algorithm to use
-                             cryptonight-waznone
+                             cryptonight-waznone2
   -o, --url=URL            URL of mining server
   -O, --userpass=U:P       username:password pair for mining server
   -u, --user=USERNAME      username for mining server
