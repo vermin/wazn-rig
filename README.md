@@ -100,6 +100,12 @@ Also you can use configuration via config file, default name **config.json**.
 * Try setup optimal cpu affinity.
 * Enable fast memory (Large/Huge pages).
 
+### Windows Build
+mkdir build
+cd build
+cmake .. -G "Unix Makefiles" -DXMRIG_DEPS=c:/xmrig-deps/gcc/x64
+make
+
 
 ## Contacts
 * [WAZN](link)
