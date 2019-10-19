@@ -33,7 +33,7 @@ namespace xmrig
 enum Algo {
     INVALID_ALGO = -1,
     CRYPTONIGHT,        /* CryptoNight (2 MB) */
-    CRYPTONIGHT_UPX,   /* CryptoNight (1 MB) */
+    CRYPTONIGHT_WAZNONE,   /* CryptoNight (1 MB) */
     CRYPTONIGHT_HEAVY,  /* CryptoNight (4 MB) */
     CRYPTONIGHT_PLEX,   /* CryptoNight (256 KB) */
     ALGO_MAX
@@ -72,7 +72,7 @@ enum Variant {
     VARIANT_RTO    = 7,  // Modified CryptoNight variant 1 (Arto only)
     VARIANT_2      = 8,  // CryptoNight variant 2
     VARIANT_HALF   = 9,  // CryptoNight variant 2 with half iterations (Masari/Stellite)
-    VARIANT_UPX2   = 10, // CryptoNight Turtle (TRTL)
+    VARIANT_WAZNONE2   = 10, // CryptoNight Turtle (TRTL)
     VARIANT_GPU    = 11, // CryptoNight-GPU (Ryo)
     VARIANT_WOW    = 12, // CryptoNightR (Wownero)
     VARIANT_4      = 13, // CryptoNightR (Monero's variant 4)

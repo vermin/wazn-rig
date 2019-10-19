@@ -159,7 +159,7 @@ bool xmrig::Config::finalize()
         return true;
     }
 
-    const AlgoVariant av = getAlgoVariant();   
+    const AlgoVariant av = getAlgoVariant();
     m_threads.mode = m_threads.count ? Simple : Automatic;
 
     const size_t size = CpuThread::multiway(av) * cn_select_memory(m_algorithm.algo()) / 1024;
@@ -345,7 +345,7 @@ bool xmrig::Config::parseInt(int key, int arg)
 xmrig::AlgoVariant xmrig::Config::getAlgoVariant() const
 {
 #   ifndef XMRIG_NO_AEON
-    if (m_algorithm.algo() == xmrig::CRYPTONIGHT_UPX) {
+    if (m_algorithm.algo() == xmrig::CRYPTONIGHT_WAZNONE) {
         return getAlgoVariantLite();
     }
 #   endif
