@@ -1,6 +1,6 @@
-# XMRig-waznone
+# WAZNRig
 
-XMRig-waznone is a high performance Wazn (WAZN) CPU miner with official support for Windows and Linux.
+WAZNRig is a high performance Wazn (WAZN) CPU miner with official support for Windows and Linux.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
 
 --miner screenshot link to do!
@@ -15,7 +15,7 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * [Contacts](#contacts)
 
 ## NEW ALGO SUPPORT
-* use cryptonight-waznone
+* use cryptonight-waznone/2
 
 ## Download
 * Binary releases: https://github.com/Project-WAZN/XMRig_waznone/releases
@@ -28,7 +28,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
 ### Options
 ```
   -a, --algo=ALGO          specify the algorithm to use
-                             cryptonight-waznone2
+                             cryptonight-waznone/2
   -o, --url=URL            URL of mining server
   -O, --userpass=U:P       username:password pair for mining server
   -u, --user=USERNAME      username for mining server
@@ -88,7 +88,7 @@ Also you can use configuration via config file, default name **config.json**.
 | 10 | 5 (Penta)        | no           |
 
 ### HUGE PAGES unavailable
-* Run XMRig as Administrator.
+* Run waznrig.exe as Administrator.
 
 ## Other information
 * No HTTP support, only stratum protocol support.
