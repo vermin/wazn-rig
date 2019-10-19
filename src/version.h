@@ -26,11 +26,11 @@
 #ifndef XMRIG_VERSION_H
 #define XMRIG_VERSION_H
 
-#define APP_ID        "xmrig"
-#define APP_NAME      "XMRig-waznone"
-#define APP_DESC      "XMRig CPU miner"
+#define APP_ID        "WaznRig"
+#define APP_NAME      "WaznRig-waznone2"
+#define APP_DESC      "WAZN CPU miner"
 #define APP_VERSION   "0.9.0"
-#define APP_DOMAIN    "xmrig.com"
+#define APP_DOMAIN    "wazn.io"
 #define APP_SITE      ""
 #define APP_COPYRIGHT ""
 #define APP_KIND      "cpu"
