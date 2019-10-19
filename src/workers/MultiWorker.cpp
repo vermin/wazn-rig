@@ -8,6 +8,7 @@
  * Copyright 2018      Lee Clagett <https://github.com/vtnerd>
  * Copyright 2018-2019 SChernykh   <https://github.com/SChernykh>
  * Copyright 2016-2019 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
+ * Copyright 2019      vermin      <https://github.com/vermin/WAZN.XMRig_waznone>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -81,7 +82,7 @@ bool MultiWorker<N>::selfTest()
     }
 
 #   ifndef XMRIG_NO_AEON
-    if (m_thread->algorithm() == CRYPTONIGHT_UPX) {
+    if (m_thread->algorithm() == CRYPTONIGHT_WAZNONE) {
         return verify(VARIANT_0,    test_output_v0_lite) &&
                verify(VARIANT_1,    test_output_v1_lite);
     }
@@ -97,7 +98,7 @@ bool MultiWorker<N>::selfTest()
 
 #   ifndef XMRIG_NO_CN_PICO
     if (m_thread->algorithm() == CRYPTONIGHT_PLEX) {
-        return verify(VARIANT_UPX2, test_output_pico_trtl);
+        return verify(VARIANT_WAZNONE2, test_output_pico_trtl);
     }
 #   endif
 
