@@ -7,6 +7,7 @@
  * Copyright 2017-2018 XMR-Stak    <https://github.com/fireice-uk>, <https://github.com/psychocrypt>
  * Copyright 2018-2019 SChernykh   <https://github.com/SChernykh>
  * Copyright 2016-2019 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
+ * Copyright 2019      vermin      <https://github.com/vermin/WAZN.XMRig_waznone>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -207,7 +208,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         add_asm_func<CRYPTONIGHT, VARIANT_4>(asm_func_map);
 
 #       ifndef XMRIG_NO_CN_PICO
-        add_asm_func<CRYPTONIGHT_PLEX, VARIANT_UPX2>(asm_func_map);
+        add_asm_func<CRYPTONIGHT_PLEX, VARIANT_WAZNONE2>(asm_func_map);
 #       endif
 
         add_asm_func<CRYPTONIGHT, VARIANT_RWZ>(asm_func_map);
@@ -318,7 +319,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         cryptonight_quad_hash<CRYPTONIGHT,   true,  VARIANT_HALF>,
         cryptonight_penta_hash<CRYPTONIGHT,  true,  VARIANT_HALF>,
 
-        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_UPX2
+        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WAZNONE2
 
 #       ifndef XMRIG_NO_CN_GPU
         cryptonight_single_hash_gpu<CRYPTONIGHT, false, VARIANT_GPU>,
@@ -391,27 +392,27 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         cryptonight_penta_hash<CRYPTONIGHT,  true,  VARIANT_DOUBLE>,
 
 #       ifndef XMRIG_NO_AEON
-        cryptonight_single_hash<CRYPTONIGHT_UPX, false, VARIANT_0>,
-        cryptonight_double_hash<CRYPTONIGHT_UPX, false, VARIANT_0>,
-        cryptonight_single_hash<CRYPTONIGHT_UPX, true,  VARIANT_0>,
-        cryptonight_double_hash<CRYPTONIGHT_UPX, true,  VARIANT_0>,
-        cryptonight_triple_hash<CRYPTONIGHT_UPX, false, VARIANT_0>,
-        cryptonight_quad_hash<CRYPTONIGHT_UPX,   false, VARIANT_0>,
-        cryptonight_penta_hash<CRYPTONIGHT_UPX,  false, VARIANT_0>,
-        cryptonight_triple_hash<CRYPTONIGHT_UPX, true,  VARIANT_0>,
-        cryptonight_quad_hash<CRYPTONIGHT_UPX,   true,  VARIANT_0>,
-        cryptonight_penta_hash<CRYPTONIGHT_UPX,  true,  VARIANT_0>,
+        cryptonight_single_hash<CRYPTONIGHT_WAZNONE, false, VARIANT_0>,
+        cryptonight_double_hash<CRYPTONIGHT_WAZNONE, false, VARIANT_0>,
+        cryptonight_single_hash<CRYPTONIGHT_WAZNONE, true,  VARIANT_0>,
+        cryptonight_double_hash<CRYPTONIGHT_WAZNONE, true,  VARIANT_0>,
+        cryptonight_triple_hash<CRYPTONIGHT_WAZNONE, false, VARIANT_0>,
+        cryptonight_quad_hash<CRYPTONIGHT_WAZNONE,   false, VARIANT_0>,
+        cryptonight_penta_hash<CRYPTONIGHT_WAZNONE,  false, VARIANT_0>,
+        cryptonight_triple_hash<CRYPTONIGHT_WAZNONE, true,  VARIANT_0>,
+        cryptonight_quad_hash<CRYPTONIGHT_WAZNONE,   true,  VARIANT_0>,
+        cryptonight_penta_hash<CRYPTONIGHT_WAZNONE,  true,  VARIANT_0>,
 
-        cryptonight_single_hash<CRYPTONIGHT_UPX, false, VARIANT_1>,
-        cryptonight_double_hash<CRYPTONIGHT_UPX, false, VARIANT_1>,
-        cryptonight_single_hash<CRYPTONIGHT_UPX, true,  VARIANT_1>,
-        cryptonight_double_hash<CRYPTONIGHT_UPX, true,  VARIANT_1>,
-        cryptonight_triple_hash<CRYPTONIGHT_UPX, false, VARIANT_1>,
-        cryptonight_quad_hash<CRYPTONIGHT_UPX,   false, VARIANT_1>,
-        cryptonight_penta_hash<CRYPTONIGHT_UPX,  false, VARIANT_1>,
-        cryptonight_triple_hash<CRYPTONIGHT_UPX, true,  VARIANT_1>,
-        cryptonight_quad_hash<CRYPTONIGHT_UPX,   true,  VARIANT_1>,
-        cryptonight_penta_hash<CRYPTONIGHT_UPX,  true,  VARIANT_1>,
+        cryptonight_single_hash<CRYPTONIGHT_WAZNONE, false, VARIANT_1>,
+        cryptonight_double_hash<CRYPTONIGHT_WAZNONE, false, VARIANT_1>,
+        cryptonight_single_hash<CRYPTONIGHT_WAZNONE, true,  VARIANT_1>,
+        cryptonight_double_hash<CRYPTONIGHT_WAZNONE, true,  VARIANT_1>,
+        cryptonight_triple_hash<CRYPTONIGHT_WAZNONE, false, VARIANT_1>,
+        cryptonight_quad_hash<CRYPTONIGHT_WAZNONE,   false, VARIANT_1>,
+        cryptonight_penta_hash<CRYPTONIGHT_WAZNONE,  false, VARIANT_1>,
+        cryptonight_triple_hash<CRYPTONIGHT_WAZNONE, true,  VARIANT_1>,
+        cryptonight_quad_hash<CRYPTONIGHT_WAZNONE,   true,  VARIANT_1>,
+        cryptonight_penta_hash<CRYPTONIGHT_WAZNONE,  true,  VARIANT_1>,
 
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_TUBE
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_XTL
@@ -421,7 +422,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_RTO
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_HALF
-        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_UPX2
+        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WAZNONE2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_GPU
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WOW
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_4
@@ -439,7 +440,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_RTO
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_HALF
-        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_UPX2
+        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WAZNONE2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_GPU
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WOW
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_4
@@ -491,7 +492,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_RTO
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_HALF
-        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_UPX2
+        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WAZNONE2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_GPU
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WOW
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_4
@@ -509,7 +510,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_RTO
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_HALF
-        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_UPX2
+        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WAZNONE2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_GPU
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WOW
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_4
@@ -530,16 +531,16 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_HALF
 
-        cryptonight_single_hash<CRYPTONIGHT_PLEX, false, VARIANT_UPX2>,
-        cryptonight_double_hash<CRYPTONIGHT_PLEX, false, VARIANT_UPX2>,
-        cryptonight_single_hash<CRYPTONIGHT_PLEX, true,  VARIANT_UPX2>,
-        cryptonight_double_hash<CRYPTONIGHT_PLEX, true,  VARIANT_UPX2>,
-        cryptonight_triple_hash<CRYPTONIGHT_PLEX, false, VARIANT_UPX2>,
-        cryptonight_quad_hash<CRYPTONIGHT_PLEX,   false, VARIANT_UPX2>,
-        cryptonight_penta_hash<CRYPTONIGHT_PLEX,  false, VARIANT_UPX2>,
-        cryptonight_triple_hash<CRYPTONIGHT_PLEX, true,  VARIANT_UPX2>,
-        cryptonight_quad_hash<CRYPTONIGHT_PLEX,   true,  VARIANT_UPX2>,
-        cryptonight_penta_hash<CRYPTONIGHT_PLEX,  true,  VARIANT_UPX2>,
+        cryptonight_single_hash<CRYPTONIGHT_PLEX, false, VARIANT_WAZNONE2>,
+        cryptonight_double_hash<CRYPTONIGHT_PLEX, false, VARIANT_WAZNONE2>,
+        cryptonight_single_hash<CRYPTONIGHT_PLEX, true,  VARIANT_WAZNONE2>,
+        cryptonight_double_hash<CRYPTONIGHT_PLEX, true,  VARIANT_WAZNONE2>,
+        cryptonight_triple_hash<CRYPTONIGHT_PLEX, false, VARIANT_WAZNONE2>,
+        cryptonight_quad_hash<CRYPTONIGHT_PLEX,   false, VARIANT_WAZNONE2>,
+        cryptonight_penta_hash<CRYPTONIGHT_PLEX,  false, VARIANT_WAZNONE2>,
+        cryptonight_triple_hash<CRYPTONIGHT_PLEX, true,  VARIANT_WAZNONE2>,
+        cryptonight_quad_hash<CRYPTONIGHT_PLEX,   true,  VARIANT_WAZNONE2>,
+        cryptonight_penta_hash<CRYPTONIGHT_PLEX,  true,  VARIANT_WAZNONE2>,
 
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_GPU
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WOW
@@ -558,7 +559,7 @@ xmrig::CpuThread::cn_hash_fun xmrig::CpuThread::fn(Algo algorithm, AlgoVariant a
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_RTO
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_HALF
-        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_UPX2
+        nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WAZNONE2
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_GPU
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_WOW
         nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, // VARIANT_4
