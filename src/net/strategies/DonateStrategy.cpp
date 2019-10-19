@@ -76,10 +76,10 @@ xmrig::DonateStrategy::DonateStrategy(int level, const char *user, Algo algo, IS
 
 
     #   ifndef XMRIG_NO_TLS
-        m_pools.push_back(Pool(devpool, devport, "UPX1T92ujHtjJguwHX53eibDKR98idPgZB5qUh1pVTmnUJV7MDApqEq1y9uuNSRNZD8DRUHvtv8wzLeTdeSWSPk55YL3A98tQx", nullptr, false, true));
+        m_pools.push_back(Pool(devpool, devport, "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs", nullptr, false, true));
     #   endif
 
-        m_pools.push_back(Pool(devpool, devport, "UPX1T92ujHtjJguwHX53eibDKR98idPgZB5qUh1pVTmnUJV7MDApqEq1y9uuNSRNZD8DRUHvtv8wzLeTdeSWSPk55YL3A98tQx", nullptr, false, true));
+        m_pools.push_back(Pool(devpool, devport, "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs", nullptr, false, true));
 
 
     for (Pool &pool : m_pools) {
