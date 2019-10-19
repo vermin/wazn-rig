@@ -1,32 +1,26 @@
-# XMRig-UPX
+# XMRig-waznone
 
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/xmrig/xmrig.svg)](https://github.com/uPlexa/xmrig-upx/releases)
-[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/uPlexa/xmrig-upx/blob/master/LICENSE)
-
-XMRig-UPX is a high performance uPlexa (UPX) CPU miner, with official support for Windows and Linux.
+XMRig-waznone is a high performance Wazn (WAZN) CPU miner with official support for Windows and Linux.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
 
-<img src="https://i.imgur.com/ZhkaKA1.png" width="619" >
+--miner screenshot link to do!
 
 #### Table of contents
 * [Features](#features)
 * [Download](#download)
 * [Usage](#usage)
 * [Algorithm variations](#algorithm-variations)
-* [Build](https://github.com/uPlexa/xmrig-upx/wiki/Build)
+* [Build](https://github.com/Project-WAZN/XMRig_waznone)
 * [Other information](#other-information)
 * [Contacts](#contacts)
 
-## UPXTWO HARDFORK SUPPORT
-* use cryptonight-upx/1 for UPX variant 1
-* use cryptonight-upx/2 for UPX variant 2 (or use cryptonight-upxtwo)
-* use cryptonight-upx will revert to variant 1, post hardfork upx v1 will be deprecated
-* Autoswitching from v1 to v2 will not work due to memory changes
+## NEW ALGO SUPPORT
+* use cryptonight-waznone
 
 ## Download
-* Binary releases: https://github.com/uPlexa/xmrig-upx/releases
-* Git tree: https://github.com/uPlexa/xmrig-upx.git
-  * Clone with `git clone https://github.com/uPlexa/xmrig-upx.git` :hammer: [Build instructions](https://github.com/uPlexa/xmrig-upx/wiki/Build).
+* Binary releases: https://github.com/Project-WAZN/XMRig_waznone/releases
+* Git tree: https://github.com/Project-WAZN/XMRig_waznone.git
+  * Clone with `git clone https://github.com/Project-WAZN/XMRig_waznone.git`
 
 ## Usage
 Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or share configurations.
@@ -34,7 +28,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
 ### Options
 ```
   -a, --algo=ALGO          specify the algorithm to use
-                             cryptonight-upx
+                             cryptonight-waznone
   -o, --url=URL            URL of mining server
   -O, --userpass=U:P       username:password pair for mining server
   -u, --user=USERNAME      username for mining server
@@ -42,7 +36,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
       --rig-id=ID          rig identifier for pool-side statistics (needs pool support)
   -t, --threads=N          number of miner threads
   -v, --av=N               algorithm variation, 0 auto select
-  -k, --keepalive          send keepalived packet for prevent timeout (needs pool support)
+  -k, --keepalive          send keepalive packet for prevent timeout (needs pool support)
       --nicehash           enable nicehash.com support
       --tls                enable SSL/TLS support (needs pool support)
       --tls-fingerprint=F  pool TLS certificate fingerprint, if set enable strict certificate pinning
@@ -108,5 +102,4 @@ Also you can use configuration via config file, default name **config.json**.
 
 
 ## Contacts
-* [uplexa](https://reddit.com/r/uplexa)
-* [discord](https://discord.gg/a7mAQwJ)
+* [WAZN](link)
