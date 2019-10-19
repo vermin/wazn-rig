@@ -7,6 +7,7 @@
  * Copyright 2017-2018 XMR-Stak    <https://github.com/fireice-uk>, <https://github.com/psychocrypt>
  * Copyright 2018-2019 SChernykh   <https://github.com/SChernykh>
  * Copyright 2016-2019 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
+ * Copyright 2019      vermin      <https://github.com/vermin/WAZN.XMRig_waznone>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,17 +27,17 @@
 #define XMRIG_VERSION_H
 
 #define APP_ID        "xmrig"
-#define APP_NAME      "XMRig-UPX"
+#define APP_NAME      "XMRig-waznone"
 #define APP_DESC      "XMRig CPU miner"
-#define APP_VERSION   "0.2.0"
+#define APP_VERSION   "0.9.0"
 #define APP_DOMAIN    "xmrig.com"
-#define APP_SITE      "www.xmrig.com"
-#define APP_COPYRIGHT "Copyright (C) 2016-2019 xmrig.com"
+#define APP_SITE      ""
+#define APP_COPYRIGHT ""
 #define APP_KIND      "cpu"
 
-#define APP_VER_MAJOR  2
-#define APP_VER_MINOR  14
-#define APP_VER_PATCH  1
+#define APP_VER_MAJOR  0
+#define APP_VER_MINOR  9
+#define APP_VER_PATCH  0
 
 #ifdef _MSC_VER
 #   if (_MSC_VER >= 1910)
