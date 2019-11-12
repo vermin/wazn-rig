@@ -100,12 +100,14 @@ Also you can use configuration via config file, default name **config.json**.
 * Enable fast memory (Large/Huge pages).
 
 ### Windows Build
-Clone with `git clone https://github.com/project-wazn/wazn-rig.git`  
-`cd wazn-rig
-mkdir build  
-cd build  
-cmake .. -G "Unix Makefiles" -DXMRIG_DEPS=c:/xmrig-deps/gcc/x64  
-make`
+Clone with `git clone https://github.com/project-wazn/wazn-rig.git`
+```
+cd wazn-rig
+mkdir build
+cd build
+cmake .. -G "Unix Makefiles" -DXMRIG_DEPS=c:/xmrig-deps/gcc/x64
+make
+```
 
 ## Contacts
 * [WAZN](link)
