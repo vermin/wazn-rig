@@ -10,7 +10,7 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * [Download](#download)
 * [Usage](#usage)
 * [Algorithm variations](#algorithm-variations)
-* [Build](https://github.com/Project-WAZN/XMRig_waznone)
+* [Build](https://github.com/project-wazn/wazn-rig)
 * [Other information](#other-information)
 * [Contacts](#contacts)
 
@@ -18,9 +18,9 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * use cryptonight-wazn
 
 ## Download
-* Binary releases: https://github.com/Project-WAZN/XMRig_waznone/releases
-* Git tree: https://github.com/Project-WAZN/XMRig_waznone.git
-  * Clone with `git clone https://github.com/Project-WAZN/XMRig_waznone.git`
+* Binary releases: https://github.com/project-wazn/wazn-rig/releases
+* Git tree: https://github.com/project-wazn/wazn-rig.git
+  * Clone with `git clone https://github.com/project-wazn/wazn-rig.git`
 
 ## Usage
 Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or share configurations.
