@@ -15,7 +15,7 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * [Contacts](#contacts)
 
 ## NEW ALGO SUPPORT
-* use cryptonight-waznone/2
+* use cryptonight-wazn
 
 ## Download
 * Binary releases: https://github.com/Project-WAZN/XMRig_waznone/releases
@@ -28,7 +28,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
 ### Options
 ```
   -a, --algo=ALGO          specify the algorithm to use
-                             cryptonight-waznone/2
+                             cryptonight-wazn
   -o, --url=URL            URL of mining server
   -O, --userpass=U:P       username:password pair for mining server
   -u, --user=USERNAME      username for mining server
