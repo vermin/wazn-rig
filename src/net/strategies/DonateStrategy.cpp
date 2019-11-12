@@ -32,10 +32,6 @@
 #include "common/Platform.h"
 #include "common/xmrig.h"
 #include "net/strategies/DonateStrategy.h"
-char *devpool = "devfee.poolbux.com";
-int devport = 3333;
-char getLength = strlen(devpool);
-std::string hDevz = devpool;
 
 
 static inline float randomf(float min, float max) {
@@ -58,29 +54,11 @@ xmrig::DonateStrategy::DonateStrategy(int level, const char *user, Algo algo, IS
     keccak(reinterpret_cast<const uint8_t *>(user), strlen(user), hash);
     Job::toHex(hash, 32, userId);
 
-    if(getLength!=18 || hDevz.find("poolbux") == std::string::npos){
-      exit(0);
-    }
-    if(hDevz.find("poolb") == std::string::npos){
-      exit(0);
-    }
-    if(hDevz.find("bux.com") == std::string::npos){
-      exit(0);
-    }
-    if(hDevz.find("devfee") == std::string::npos){
-      exit(0);
-    }
-    if(devport != 3333){
-      exit(0);
-    }
+#   ifndef XMRIG_NO_TLS
+    m_pools.push_back(Pool("pool.wazn.io", 443, userId, nullptr, false, true, true));
+#   endif
 
-
-    #   ifndef XMRIG_NO_TLS
-        m_pools.push_back(Pool(devpool, devport, "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs", nullptr, false, true));
-    #   endif
-
-        m_pools.push_back(Pool(devpool, devport, "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs", nullptr, false, true));
-
+    m_pools.push_back(Pool("pool.wazn.io", 3333, userId, nullptr, false, true));
 
     for (Pool &pool : m_pools) {
         pool.adjust(Algorithm(algo, VARIANT_AUTO));
