@@ -20,7 +20,6 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 ## Download
 * Binary releases: https://github.com/project-wazn/wazn-rig/releases
 * Git tree: https://github.com/project-wazn/wazn-rig.git
-  * Clone with `git clone https://github.com/project-wazn/wazn-rig.git`
 
 ## Usage
 Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or share configurations.
@@ -101,10 +100,12 @@ Also you can use configuration via config file, default name **config.json**.
 * Enable fast memory (Large/Huge pages).
 
 ### Windows Build
+Clone with `git clone https://github.com/project-wazn/wazn-rig.git`
+`cd wazn-rig
 mkdir build
 cd build
 cmake .. -G "Unix Makefiles" -DXMRIG_DEPS=c:/xmrig-deps/gcc/x64
-make
+make`
 
 
 ## Contacts
