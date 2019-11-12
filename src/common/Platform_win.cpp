@@ -201,4 +201,3 @@ void Platform::setThreadPriority(int priority)
 
     SetThreadPriority(GetCurrentThread(), prio);
 }
-

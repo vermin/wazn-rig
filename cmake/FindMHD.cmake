@@ -46,4 +46,3 @@ endif()
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(MHD DEFAULT_MSG MHD_LIBRARY MHD_INCLUDE_DIR)
 mark_as_advanced(MHD_INCLUDE_DIR MHD_LIBRARY)
-

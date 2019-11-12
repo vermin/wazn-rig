@@ -36,7 +36,7 @@ static char const usage[] = "\
 Usage: " APP_ID " [OPTIONS]\n\
 Options:\n\
   -a, --algo=ALGO          specify the algorithm to use\n\
-                             cryptonight-waznone/2\n"
+                             cryptonight-wazn\n"
 #ifndef XMRIG_NO_AEON
 "\
                              cryptonight-lite\n"

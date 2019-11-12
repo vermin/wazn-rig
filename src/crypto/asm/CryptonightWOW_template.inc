@@ -236,7 +236,7 @@ FN_PREFIX(CryptonightWOW_template_double_part1):
 	mov	r11d, 524288
 	movq	xmm10, rax
 	punpcklqdq xmm10, xmm0
-	
+
 	movq xmm14, QWORD PTR [rsp+128]
 	movq xmm15, QWORD PTR [rsp+136]
 

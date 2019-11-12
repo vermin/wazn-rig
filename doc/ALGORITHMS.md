@@ -1,10 +1,10 @@
 # Algorithms
 
-XMRig uses a different way to specify algorithms, compared to other miners.
+WAZNRig uses a different way to specify algorithms, compared to other miners.
 
 Algorithm selection splitted to 2 parts:
 
- * Global base algorithm per miner or proxy instance, `algo` option. Possible values: `cryptonight-waznone/2`, `cryptonight-lite`, `cryptonight-heavy`.
+ * Global base algorithm per miner or proxy instance, `algo` option. Possible values: `cryptonight-wazn`, `cryptonight-lite`, `cryptonight-heavy`.
  * Algorithm variant specified separately for each pool, `variant` option.
  * [Full table for supported algorithm and variants.](https://github.com/xmrig/xmrig-proxy/blob/master/doc/STRATUM_EXT.md#14-algorithm-names-and-variants)
 

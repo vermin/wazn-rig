@@ -121,4 +121,3 @@ void Platform::setThreadPriority(int priority)
 
     setpriority(PRIO_PROCESS, 0, prio);
 }
-

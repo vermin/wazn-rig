@@ -49,7 +49,7 @@
 // A struct is now defined in this header file called 'SIMDVec' which can be used by applications which
 // attempt to access the contents of an _m128 struct directly.  It is important to note that accessing the __m128
 // struct directly is bad coding practice by Microsoft: @see: https://msdn.microsoft.com/en-us/library/ayeb3ayc.aspx
-// 
+//
 // However, some legacy source code may try to access the contents of an __m128 struct directly so the developer
 // can use the SIMDVec as an alias for it.  Any casting must be done manually by the developer, as you cannot
 // cast or otherwise alias the base NEON data type for intrinsic operations.
@@ -66,7 +66,7 @@
 //
 // Support for a number of new intrinsics was added, however, none of them yet have unit-tests to 100% confirm they are
 // producing the correct results on NEON.  These unit tests will be added as soon as possible.
-// 
+//
 // Here is the list of new instrinsics which have been added:
 //
 // _mm_cvtss_f32     :  extracts the lower order floating point value from the parameter
@@ -338,7 +338,7 @@ FORCE_INLINE __m128 _mm_set_ps(float w, float z, float y, float x)
 }
 
 // Sets the four single-precision, floating-point values to the four inputs in reverse order. https://msdn.microsoft.com/en-us/library/vstudio/d2172ct3(v=vs.100).aspx
-FORCE_INLINE __m128 _mm_setr_ps(float w, float z , float y , float x ) 
+FORCE_INLINE __m128 _mm_setr_ps(float w, float z , float y , float x )
 {
 	float __attribute__ ((aligned (16))) data[4] = { w, z, y, x };
 	return vreinterpretq_m128_f32(vld1q_f32(data));
@@ -1128,9 +1128,9 @@ FORCE_INLINE __m128i _mm_mulhi_epi16(__m128i a, __m128i b)
 	return vreinterpretq_m128i_u16(r.val[1]);
 }
 
-// Computes pairwise add of each argument as single-precision, floating-point values a and b. 
+// Computes pairwise add of each argument as single-precision, floating-point values a and b.
 //https://msdn.microsoft.com/en-us/library/yd9wecaa.aspx
-FORCE_INLINE __m128 _mm_hadd_ps(__m128 a, __m128 b ) 
+FORCE_INLINE __m128 _mm_hadd_ps(__m128 a, __m128 b )
 {
 #if defined(__aarch64__)
 	return vreinterpretq_m128_f32(vpaddq_f32(vreinterpretq_f32_m128(a), vreinterpretq_f32_m128(b))); //AArch64
@@ -1193,7 +1193,7 @@ FORCE_INLINE __m128i _mm_cmpgt_epi32(__m128i a, __m128i b)
 // see also:
 // http://stackoverflow.com/questions/8627331/what-does-ordered-unordered-comparison-mean
 // http://stackoverflow.com/questions/29349621/neon-isnanval-intrinsics
-FORCE_INLINE __m128 _mm_cmpord_ps(__m128 a, __m128 b ) 
+FORCE_INLINE __m128 _mm_cmpord_ps(__m128 a, __m128 b )
 {
 	// Note: NEON does not have ordered compare builtin
 	// Need to compare a eq a and b eq b to check for NaN
@@ -1309,7 +1309,7 @@ FORCE_INLINE __m128i _mm_cvtepi16_epi32(__m128i a)
 }
 
 // Converts the four single-precision, floating-point values of a to signed 32-bit integer values. https://msdn.microsoft.com/en-us/library/vstudio/xdc42k5e(v=vs.100).aspx
-// *NOTE*. The default rounding mode on SSE is 'round to even', which ArmV7 does not support!  
+// *NOTE*. The default rounding mode on SSE is 'round to even', which ArmV7 does not support!
 // It is supported on ARMv8 however.
 FORCE_INLINE __m128i _mm_cvtps_epi32(__m128 a)
 {
@@ -1484,7 +1484,7 @@ FORCE_INLINE void _mm_stream_si128(__m128i *p, __m128i a)
 }
 
 // Cache line containing p is flushed and invalidated from all caches in the coherency domain. : https://msdn.microsoft.com/en-us/library/ba08y07y(v=vs.100).aspx
-FORCE_INLINE void _mm_clflush(void const*p) 
+FORCE_INLINE void _mm_clflush(void const*p)
 {
 	// no corollary for Neon?
 }

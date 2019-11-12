@@ -26,18 +26,18 @@
 #ifndef XMRIG_VERSION_H
 #define XMRIG_VERSION_H
 
-#define APP_ID        "WaznRig"
-#define APP_NAME      "WaznRig-waznone2"
+#define APP_ID        "waznrig"
+#define APP_NAME      "WAZNRig"
 #define APP_DESC      "WAZN CPU miner"
-#define APP_VERSION   "0.9.0"
+#define APP_VERSION   "0.9.1"
 #define APP_DOMAIN    "wazn.io"
-#define APP_SITE      ""
-#define APP_COPYRIGHT ""
+#define APP_SITE      "https://wazn.io"
+#define APP_COPYRIGHT "Copyright (C) 2016-2019 wazn.io"
 #define APP_KIND      "cpu"
 
 #define APP_VER_MAJOR  0
 #define APP_VER_MINOR  9
-#define APP_VER_PATCH  0
+#define APP_VER_PATCH  1
 
 #ifdef _MSC_VER
 #   if (_MSC_VER >= 1910)

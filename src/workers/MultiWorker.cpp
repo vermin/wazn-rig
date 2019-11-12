@@ -82,7 +82,7 @@ bool MultiWorker<N>::selfTest()
     }
 
 #   ifndef XMRIG_NO_AEON
-    if (m_thread->algorithm() == CRYPTONIGHT_WAZNONE) {
+    if (m_thread->algorithm() == CRYPTONIGHT_LITE) {
         return verify(VARIANT_0,    test_output_v0_lite) &&
                verify(VARIANT_1,    test_output_v1_lite);
     }
@@ -97,8 +97,8 @@ bool MultiWorker<N>::selfTest()
 #   endif
 
 #   ifndef XMRIG_NO_CN_PICO
-    if (m_thread->algorithm() == CRYPTONIGHT_PLEX) {
-        return verify(VARIANT_WAZNONE2, test_output_pico_trtl);
+    if (m_thread->algorithm() == CRYPTONIGHT_WAZN) {
+        return verify(VARIANT_WAZN1, test_output_wazn_wazn1);
     }
 #   endif
 
