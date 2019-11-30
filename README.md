@@ -1,4 +1,7 @@
-# WAZNRig
+WAZNRig
+======================
+
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue)](https://opensource.org/licenses/GPL-3.0)
 
 WAZNRig is a high performance Wazn (WAZN) CPU miner with official support for Windows and Linux.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
@@ -13,6 +16,7 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * [Build](https://github.com/project-wazn/wazn-rig)
 * [Other information](#other-information)
 * [Contacts](#contacts)
+* [License](#license)
 
 ## NEW ALGO SUPPORT
 * use cryptonight-wazn
@@ -110,3 +114,12 @@ make
 
 ## Contacts
 * [WAZN](link)
+
+
+## License
+```
+Licensed under the GPL-3.0
+Copyright (c) 2019 WAZN Project
+Copyright (c) 2019 QuantumLeaper
+Copyright (c) 2017-2019 xmrig
+```
