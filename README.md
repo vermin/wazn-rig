@@ -13,6 +13,7 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * [Build](https://github.com/project-wazn/wazn-rig)
 * [Other information](#other-information)
 * [Contacts](#contacts)
+* [License](#license)
 
 ## NEW ALGO SUPPORT
 * use cryptonight-wazn
@@ -113,7 +114,7 @@ make
 * [WAZN](link)
 
 
-#### License
+## License
 ```
 Licensed under the GPL-3.0
 Copyright (c) 2019 WAZN Project
