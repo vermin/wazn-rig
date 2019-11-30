@@ -112,8 +112,9 @@ make
 ## Contacts
 * [WAZN](link)
 
-##### License
+
 ```
+#### License
 Licensed under the GPL-3.0
 Copyright (c) 2019 WAZN Project
 Copyright (c) 2019 QuantumLeaper
