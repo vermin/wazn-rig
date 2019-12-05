@@ -6,16 +6,12 @@ WAZNRig
 WAZNRig is a high performance Wazn (WAZN) CPU miner with official support for Windows and Linux.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
 
---miner screenshot link to do!
-
 #### Table of contents
 * [Features](#features)
 * [Download](#download)
 * [Usage](#usage)
 * [Algorithm variations](#algorithm-variations)
-* [Build](https://github.com/project-wazn/wazn-rig)
 * [Other information](#other-information)
-* [Contacts](#contacts)
 * [License](#license)
 
 ## NEW ALGO SUPPORT
@@ -102,19 +98,6 @@ Also you can use configuration via config file, default name **config.json**.
 * Use modern CPUs with AES-NI instruction set.
 * Try setup optimal cpu affinity.
 * Enable fast memory (Large/Huge pages).
-
-### Windows Build
-Clone with `git clone https://github.com/project-wazn/wazn-rig.git`
-```
-cd wazn-rig
-mkdir build && cd build
-cmake .. -G "Unix Makefiles" -DXMRIG_DEPS=c:/xmrig-deps/gcc/x64
-make
-```
-
-## Contacts
-* [WAZN](link)
-
 
 ## License
 ```
