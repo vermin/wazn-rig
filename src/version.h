@@ -29,14 +29,14 @@
 #define APP_ID        "waznrig"
 #define APP_NAME      "WAZNRig"
 #define APP_DESC      "WAZN CPU Miner"
-#define APP_VERSION   "1.0.0"
+#define APP_VERSION   "1.1.0"
 #define APP_DOMAIN    "wazn.io"
 #define APP_SITE      "https://wazn.io"
-#define APP_COPYRIGHT "Copyright (C) 2020 wazn.io"
+#define APP_COPYRIGHT "Copyright (C) 2019-2020 wazn.io"
 #define APP_KIND      "cpu"
 
 #define APP_VER_MAJOR  1
-#define APP_VER_MINOR  0
+#define APP_VER_MINOR  1
 #define APP_VER_PATCH  0
 
 #ifdef _MSC_VER
