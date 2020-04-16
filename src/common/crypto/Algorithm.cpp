@@ -84,7 +84,7 @@ static AlgoData const algorithms[] = {
     { "cryptonight-heavy/tube", "cn-heavy/tube", xmrig::CRYPTONIGHT_HEAVY, xmrig::VARIANT_TUBE },
 #   endif
 
-#   ifndef XMRIG_NO_CN_PICO
+#   ifndef XMRIG_NO_CN_WAZN
     { "cryptonight-wazn",       "cn-wazn",       xmrig::CRYPTONIGHT_WAZN, xmrig::VARIANT_WAZN1 },
     { "cryptonight-wazn1",      "cn-wazn1",      xmrig::CRYPTONIGHT_WAZN, xmrig::VARIANT_WAZN1 },
     { "cryptonight-waznone",    "cn-waznone",    xmrig::CRYPTONIGHT_WAZN, xmrig::VARIANT_WAZN1 },
@@ -114,7 +114,7 @@ static AlgoData const xmrStakAlgorithms[] = {
     { "cryptonight_masari",      nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_MSR  },
     { "cryptonight-bittube2",    nullptr, xmrig::CRYPTONIGHT_HEAVY, xmrig::VARIANT_TUBE }, // bittube-miner
     { "cryptonight_alloy",       nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_XAO  }, // xmr-stak-alloy
-    { "cryptonight_turtle",      nullptr, xmrig::CRYPTONIGHT_WAZN,  xmrig::VARIANT_WAZN1 },
+    { "cryptonight_wazn",        nullptr, xmrig::CRYPTONIGHT_WAZN,  xmrig::VARIANT_WAZN1 },
     { "cryptonight_gpu",         nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_GPU  },
     { "cryptonight_r",           nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_4  },
 };
@@ -132,7 +132,7 @@ static const char *variants[] = {
     "rto",
     "2",
     "half",
-    "trtl",
+    "wazn1",
     "gpu",
     "wow",
     "r",

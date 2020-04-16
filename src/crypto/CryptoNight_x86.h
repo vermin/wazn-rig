@@ -762,10 +762,10 @@ extern xmrig::CpuThread::cn_mainloop_fun        cn_half_mainloop_ryzen_asm;
 extern xmrig::CpuThread::cn_mainloop_fun        cn_half_mainloop_bulldozer_asm;
 extern xmrig::CpuThread::cn_mainloop_double_fun cn_half_double_mainloop_sandybridge_asm;
 
-extern xmrig::CpuThread::cn_mainloop_fun        cn_trtl_mainloop_ivybridge_asm;
-extern xmrig::CpuThread::cn_mainloop_fun        cn_trtl_mainloop_ryzen_asm;
-extern xmrig::CpuThread::cn_mainloop_fun        cn_trtl_mainloop_bulldozer_asm;
-extern xmrig::CpuThread::cn_mainloop_double_fun cn_trtl_double_mainloop_sandybridge_asm;
+extern xmrig::CpuThread::cn_mainloop_fun        cn_wazn1_mainloop_ivybridge_asm;
+extern xmrig::CpuThread::cn_mainloop_fun        cn_wazn1_mainloop_ryzen_asm;
+extern xmrig::CpuThread::cn_mainloop_fun        cn_wazn1_mainloop_bulldozer_asm;
+extern xmrig::CpuThread::cn_mainloop_double_fun cn_wazn1_double_mainloop_sandybridge_asm;
 
 extern xmrig::CpuThread::cn_mainloop_fun        cn_zls_mainloop_ivybridge_asm;
 extern xmrig::CpuThread::cn_mainloop_fun        cn_zls_mainloop_ryzen_asm;

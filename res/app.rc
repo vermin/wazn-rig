@@ -20,13 +20,13 @@ VS_VERSION_INFO VERSIONINFO
     BEGIN
       BLOCK "000004b0"
       BEGIN
-        VALUE "CompanyName",      APP_SITE
-        VALUE "FileDescription",  APP_DESC
-        VALUE "FileVersion",      APP_VERSION
-        VALUE "LegalCopyright",   APP_COPYRIGHT
+        VALUE "CompanyName",      "https://wazn.io"
+        VALUE "FileDescription",  "WAZN CPU Miner"
+        VALUE "FileVersion",      "1.0.0"
+        VALUE "LegalCopyright",   "Copyright (C) 2020 wazn.io"
         VALUE "OriginalFilename", "waznrig.exe"
-        VALUE "ProductName",      APP_NAME
-        VALUE "ProductVersion",   APP_VERSION
+        VALUE "ProductName",      "WAZNRig"
+        VALUE "ProductVersion",   "v1.0.0"
       END
     END
     BLOCK "VarFileInfo"

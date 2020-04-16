@@ -102,7 +102,7 @@ Also you can use configuration via config file, default name **config.json**.
 ## License
 ```
 Licensed under the GPL-3.0
-Copyright (c) 2019 WAZN Project
+Copyright (c) 2019-2020 WAZN Project
 Copyright (c) 2019 QuantumLeaper
 Copyright (c) 2017-2019 xmrig
 ```

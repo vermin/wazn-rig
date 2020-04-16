@@ -96,7 +96,7 @@ bool MultiWorker<N>::selfTest()
     }
 #   endif
 
-#   ifndef XMRIG_NO_CN_PICO
+#   ifndef XMRIG_NO_CN_WAZN
     if (m_thread->algorithm() == CRYPTONIGHT_WAZN) {
         return verify(VARIANT_WAZN1, test_output_wazn_wazn1);
     }

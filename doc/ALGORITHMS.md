@@ -1,8 +1,8 @@
 # Algorithms
 
-WAZNRig uses a different way to specify algorithms, compared to other miners.
+WAZNRig uses a different way to specify algorithms if compared to other miners.
 
-Algorithm selection splitted to 2 parts:
+Algorithm selection is split in 2 sections:
 
  * Global base algorithm per miner or proxy instance, `algo` option. Possible values: `cryptonight-wazn`, `cryptonight-lite`, `cryptonight-heavy`.
  * Algorithm variant specified separately for each pool, `variant` option.
@@ -25,4 +25,4 @@ Algorithm selection splitted to 2 parts:
 ```
 
 ## Mining algorithm negotiation
-If your pool support [mining algorithm negotiation](https://github.com/xmrig/xmrig-proxy/issues/168) miner will choice proper variant automaticaly and if you choice wrong base algorithm you will see error message.
+If your pool support [mining algorithm negotiation](https://github.com/xmrig/xmrig-proxy/issues/168) miner will choice proper variant automatically and if you choice wrong base algorithm you will see error message.
