@@ -12,7 +12,7 @@ option(WITH_TLS             "Enable OpenSSL support" ON)
 option(WITH_ASM             "Enable ASM PoW implementations" ON)
 option(BUILD_STATIC         "Build static binary" ON)
 option(ARM_TARGET           "Force use specific ARM target 8 or 7" 0)
-option(WITH_EMBEDDED_CONFIG "Enable internal embedded JSON config" OFF)
+option(WITH_EMBEDDED_CONFIG "Enable internal embedded JSON config" ON)
 
 include (CheckIncludeFile)
 include (cmake/cpu.cmake)
