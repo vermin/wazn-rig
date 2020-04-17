@@ -11,7 +11,7 @@ Algorithm selection is split in 2 sections:
 #### Example
 ```json
 {
-  "algo": "cryptonight",
+  "algo": "cryptonight-wazn",
   ...
   "pools": [
     {

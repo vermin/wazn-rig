@@ -33,7 +33,7 @@ namespace xmrig {
 const static char *default_config =
 R"===(
 {
-    "algo": "cryptonight",
+    "algo": "cryptonight-wazn",
     "api": {
         "port": 0,
         "access-token": null,
@@ -49,20 +49,20 @@ R"===(
     "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
-    "donate-level": 5,
+    "donate-level": 0,
     "huge-pages": true,
     "hw-aes": null,
     "log-file": null,
-    "max-cpu-usage": 100,
+    "max-cpu-usage": 90,
     "pools": [
         {
-            "url": "donate.v2.xmrig.com:3333",
-            "user": "YOUR_WALLET_ADDRESS",
+            "url": "dig.wazn.io:3333",
+            "user": "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs",
             "pass": "x",
-            "rig-id": null,
+            "rig-id": "waznrig",
             "nicehash": false,
-            "keepalive": false,
-            "variant": -1,
+            "keepalive": true,
+            "variant": 1,
             "tls": false,
             "tls-fingerprint": null
         }
