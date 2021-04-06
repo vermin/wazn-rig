@@ -1,5 +1,5 @@
 {
-    "algo": "cryptonight-wazn",
+    "algo": "cryptonight",
     "api": {
         "port": 44444,
         "access-token": "TOKEN",
@@ -12,19 +12,27 @@
     "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
-    "donate-level": 0,
+    "donate-level": 5,
     "huge-pages": true,
     "hw-aes": null,
     "log-file": null,
-    "max-cpu-usage": 90,
+    "max-cpu-usage": 75,
     "pools": [
         {
-            "url": "dig.wazn.io:3333",
-            "user": "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs",
+            "url": "pool.monero.hashvault.pro:3333",
+            "user": "48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD",
             "pass": "x",
-            "rig-id": "waznrig",
+            "keepalive": false,
             "nicehash": false,
-            "variant": 1
+            "variant": -1
+        },
+        {
+            "url": "pool.supportxmr.com:3333",
+            "user": "48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD",
+            "pass": "x",
+            "keepalive": false,
+            "nicehash": false,
+            "variant": -1
         }
     ],
     "print-time": 60,

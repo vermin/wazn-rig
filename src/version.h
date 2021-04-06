@@ -1,13 +1,13 @@
 /* XMRig
+ * Copyright 2019-2021 Wazn Project
  * Copyright 2010      Jeff Garzik <jgarzik@pobox.com>
  * Copyright 2012-2014 pooler      <pooler@litecoinpool.org>
  * Copyright 2014      Lucas Jones <https://github.com/lucasjones>
  * Copyright 2014-2016 Wolf9466    <https://github.com/OhGodAPet>
  * Copyright 2016      Jay D Dee   <jayddee246@gmail.com>
  * Copyright 2017-2018 XMR-Stak    <https://github.com/fireice-uk>, <https://github.com/psychocrypt>
- * Copyright 2018-2019 SChernykh   <https://github.com/SChernykh>
- * Copyright 2016-2019 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
- * Copyright 2019      vermin      <https://github.com/vermin/WAZN.XMRig_waznone>
+ * Copyright 2018-2021 SChernykh   <https://github.com/SChernykh>
+ * Copyright 2016-2021 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -28,19 +28,21 @@
 
 #define APP_ID        "waznrig"
 #define APP_NAME      "WAZNRig"
-#define APP_DESC      "WAZN CPU Miner"
-#define APP_VERSION   "1.1.0"
+#define APP_DESC      "WAZNRig CPU/GPU Cryptonight Miner"
+#define APP_VERSION   "6.11.0"
 #define APP_DOMAIN    "wazn.io"
-#define APP_SITE      "https://wazn.io"
-#define APP_COPYRIGHT "Copyright (C) 2019-2020 wazn.io"
-#define APP_KIND      "cpu"
+#define APP_SITE      "www.wazn.io"
+#define APP_COPYRIGHT "Copyright (C) 2019-2021 Wazn Project"
+#define APP_KIND      "miner"
 
-#define APP_VER_MAJOR  1
-#define APP_VER_MINOR  1
+#define APP_VER_MAJOR  6
+#define APP_VER_MINOR  11
 #define APP_VER_PATCH  0
 
 #ifdef _MSC_VER
-#   if (_MSC_VER >= 1910)
+#   if (_MSC_VER >= 1920)
+#       define MSVC_VERSION 2019
+#   elif (_MSC_VER >= 1910 && _MSC_VER < 1920)
 #       define MSVC_VERSION 2017
 #   elif _MSC_VER == 1900
 #       define MSVC_VERSION 2015

@@ -5,8 +5,8 @@
  * Copyright 2014-2016 Wolf9466    <https://github.com/OhGodAPet>
  * Copyright 2016      Jay D Dee   <jayddee246@gmail.com>
  * Copyright 2017-2018 XMR-Stak    <https://github.com/fireice-uk>, <https://github.com/psychocrypt>
- * Copyright 2016-2018 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
- * Copyright 2019      vermin      <https://github.com/vermin/WAZN.XMRig_waznone>
+ * Copyright 2018-2020 SChernykh   <https://github.com/SChernykh>
+ * Copyright 2016-2020 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -22,8 +22,8 @@
  *   along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef __DONATE_H__
-#define __DONATE_H__
+#ifndef XMRIG_DONATE_H
+#define XMRIG_DONATE_H
 
 
 /*
@@ -34,7 +34,7 @@
  * Example of how it works for the setting of 1%:
  * You miner will mine into your usual pool for random time (in range from 49.5 to 148.5 minutes),
  * then switch to the developer's pool for 1 minute, then switch again to your pool for 99 minutes
- * and then switch agaiin to developer's pool for 1 minute, these rounds will continue until miner working.
+ * and then switch again to developer's pool for 1 minute, these rounds will continue until miner working.
  *
  * Randomised only first round, to prevent waves on the donation pool.
  *
@@ -48,4 +48,4 @@ constexpr const int kDefaultDonateLevel = 0;
 constexpr const int kMinimumDonateLevel = 0;
 
 
-#endif /* __DONATE_H__ */
+#endif /* XMRIG_DONATE_H */

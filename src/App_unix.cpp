@@ -5,9 +5,8 @@
  * Copyright 2014-2016 Wolf9466    <https://github.com/OhGodAPet>
  * Copyright 2016      Jay D Dee   <jayddee246@gmail.com>
  * Copyright 2017-2018 XMR-Stak    <https://github.com/fireice-uk>, <https://github.com/psychocrypt>
- * Copyright 2018-2019 SChernykh   <https://github.com/SChernykh>
- * Copyright 2016-2019 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
- * Copyright 2019      vermin      <https://github.com/vermin/WAZN.XMRig_waznone>
+ * Copyright 2018-2020 SChernykh   <https://github.com/SChernykh>
+ * Copyright 2016-2020 XMRig       <https://github.com/xmrig>, <support@xmrig.com>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -24,33 +23,34 @@
  */
 
 
-#include <stdlib.h>
-#include <signal.h>
-#include <errno.h>
+#include <cstdlib>
+#include <csignal>
+#include <cerrno>
 #include <unistd.h>
 
 
 #include "App.h"
-#include "common/log/Log.h"
-#include "core/Config.h"
+#include "base/io/log/Log.h"
 #include "core/Controller.h"
 
 
-void xmrig::App::background()
+bool xmrig::App::background(int &rc)
 {
-    signal(SIGPIPE, SIG_IGN);
-
-    if (!m_controller->config()->isBackground()) {
-        return;
+    if (!m_controller->isBackground()) {
+        return false;
     }
 
     int i = fork();
     if (i < 0) {
-        exit(1);
+        rc = 1;
+
+        return true;
     }
 
     if (i > 0) {
-        exit(0);
+        rc = 0;
+
+        return true;
     }
 
     i = setsid();
@@ -63,4 +63,6 @@ void xmrig::App::background()
     if (i < 0) {
         LOG_ERR("chdir() failed (errno = %d)", errno);
     }
+
+    return false;
 }

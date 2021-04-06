@@ -1,18 +1,18 @@
 {
-    "id": "42f3104f9a2de78c",
-    "worker_id": "Ubuntu-1804-bionic-64-minimal",
-    "version": "1.1.0",
+    "id": "92f3104f9a2ee78c",
+    "worker_id": "Ubuntu-1604-xenial-64-minimal",
+    "version": "2.6.0-beta3",
     "kind": "cpu",
-    "ua": "WAZNRig/1.1.0 (Linux x86_64) libuv/1.31.0 gcc/9.3.0",
+    "ua": "XMRig/2.6.0-beta3 (Linux x86_64) libuv/1.8.0 gcc/5.4.0",
     "cpu": {
-        "brand": "Intel(R) Core(TM) i7-5820 CPU @ 3.30GHz",
+        "brand": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
         "aes": true,
         "x64": true,
         "sockets": 1
     },
-    "algo": "cryptonight-wazn",
+    "algo": "cryptonight",
     "hugepages": true,
-    "donate_level": 0,
+    "donate_level": 5,
     "hashrate": {
         "total": [
             296.24,
@@ -64,7 +64,7 @@
         "error_log": []
     },
     "connection": {
-        "pool": "dig.wazn.io:3333",
+        "pool": "pool.monero.hashvault.pro:3333",
         "uptime": 953,
         "ping": 35,
         "failures": 0,

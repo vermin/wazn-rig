@@ -1,7 +1,7 @@
 #include <windows.h>
 #include "../src/version.h"
 
-IDI_ICON1    ICON    DISCARDABLE    "app.ico"
+101 ICON "app.ico"
 
 VS_VERSION_INFO VERSIONINFO
   FILEVERSION APP_VER_MAJOR,APP_VER_MINOR,APP_VER_PATCH,0
@@ -20,13 +20,13 @@ VS_VERSION_INFO VERSIONINFO
     BEGIN
       BLOCK "000004b0"
       BEGIN
-        VALUE "CompanyName",      "https://wazn.io"
-        VALUE "FileDescription",  "WAZN CPU Miner"
-        VALUE "FileVersion",      "1.0.0"
-        VALUE "LegalCopyright",   "Copyright (C) 2020 wazn.io"
+        VALUE "CompanyName",      APP_SITE
+        VALUE "FileDescription",  APP_DESC
+        VALUE "FileVersion",      APP_VERSION
+        VALUE "LegalCopyright",   APP_COPYRIGHT
         VALUE "OriginalFilename", "waznrig.exe"
-        VALUE "ProductName",      "WAZNRig"
-        VALUE "ProductVersion",   "v1.0.0"
+        VALUE "ProductName",      APP_NAME
+        VALUE "ProductVersion",   APP_VERSION
       END
     END
     BLOCK "VarFileInfo"
