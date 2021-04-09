@@ -62,10 +62,10 @@
     "log-file": null,
     "pools": [
         {
-            "algo": null,
+            "algo": "rx/0",
             "coin": null,
-            "url": "dig.wazn.io:4444",
-            "user": "YOUR_WALLET_ADDRESS",
+            "url": "pool.minexmr.com:4444",
+            "user": "87Y831NJ6Qc6spPDmhGsNeAd6xfhX2rJ6a3FgnSATBBvKcRF8PCKrSLjMz59AJ4QtdjZKbDQECKV2NzwxaKKKJxGNb7fs7V+50000",
             "pass": "x",
             "rig-id": null,
             "nicehash": false,
