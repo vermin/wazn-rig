@@ -27,8 +27,8 @@
 #define XMRIG_VERSION_H
 
 #define APP_ID        "waznrig"
-#define APP_NAME      "WAZNRig"
-#define APP_DESC      "WAZNRig CPU/GPU Cryptonight Miner"
+#define APP_NAME      "WAZNRig for Android"
+#define APP_DESC      "WAZNRig Android Miner"
 #define APP_VERSION   "6.11.0"
 #define APP_DOMAIN    "wazn.io"
 #define APP_SITE      "www.wazn.io"
